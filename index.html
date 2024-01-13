@@ -5,6 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+    <style>
+        h1 {
+            background-color: red;
+            color: black;
+        }
+        .Contactform {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.Contactform label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.Contactform input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.Contactform input[type="text"],
+.Contactform input[type="password"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.Contactform input[type="text"]:focus,
+.Contactform input[type="password"]:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.Contactform input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Contactform input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+    </style>
 <body>
     <h1>Hello</h1>
     <h1>Hello2</h1>
@@ -14,5 +63,18 @@
     <img src="img.jpg" alt="">
     <img src="1img.jpg" alt="">
     <h1>Git hub</h1>
+
+    <h1>Contact</h1>
+    <form action="Contactform" class="Contactform">
+        <label for="User name">User name</label>
+        <input type="text" name="User name" id="User name" placeholder="Enter User name">
+        <br>
+        <label for="Password">Password</label>
+        <input type="password" name="Password" id="Password" placeholder="Enter Password">
+        <br>
+        <label for="Email">Email</label>
+        <input type="text" name="Email" id="Email" placeholder="Enter Email">
+     </form>
+
 </body>
 </html>
